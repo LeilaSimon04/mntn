@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*h1 andada pro 3.5rem
+
+*/
+
+:root {
+    --primary1: #0B1D26;
+    --primary2: #FBD784;
+    --primary3: #FFF;
+}
+
+
+body {
+    background-color: var(--primary1);
+    /*Florent m'a aidé pour le linear-gradient*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.685)0%, rgba(0, 0, 0, 0.231)30%), url(./asset/banniere.jpg);
+    background-repeat: no-repeat;
+    background-position-y: -300px;
+    background-size: 100%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paddings {
+    padding: 10% 15% 0 15%;
+}
+
+.textAlign {
+    text-align: left;
+}
+
+/*TYPOS*/
+h1 {
+    font-family: 'andada pro';
+    font-size: 1rem;
+    color: var(--primary3);
+}
+
+/*Slogan*/
+h2 {
+    font-family: 'andada pro', serif;
+    color: var(--primary3);
+    font-size: 3.5rem;
+    width: 100%;
+}
+
+/*Titres*/
+h3 {
+    font-family: 'andada pro', serif;
+    color: var(--primary3);
+    font-size: 3rem;
+    width: 100%;
+}
+
+/*Pré titres*/
+h4 {
+    font-family: 'andada pro';
+    font-size: 1.8rem;
+    color: var(--primary3);
+}
+
+h5 {
+    font-family: 'josefin sans', serif;
+    color: #FBD784;
+    font-size: 18px;
+}
+
+/*Autres textes*/
+p {
+    font-family: 'roboto', serif;
+    color: var(--primary3);
+    font-size: 16px;
+    /*Interligne*/
+    line-height: 1.5rem;
+}
+
+/*éléments cliquables, navigation*/
+a {
+    text-decoration: none;
+    font-family: 'josefin sans', serif;
+    color: var(--primary3);
+    font-size: 18px;
+}
+
+a:visited,
+:link,
+:focus {
+    color: var(--primary3);
+}
+
+.dore {
+    color: var(--primary2);
+}
+
+span {
+    letter-spacing: 5px;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+/*HEADER*/
+header {
+    background-color: var(--primary1);
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    height: 2vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header nav {
+    width: 25%;
+    justify-content: space-between;
+}
+
+
+/*HERO*/
+.hero {
+    /*background-color: aqua;*/
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 95vh;
+}
+/* Classe pour les Nav de côté */
+.navPosition {
+    width: 5%;
+    height: 15%;
+}
+/* Nav de gauche du HERO - réseaux sociaux*/
+.navReseauxSociaux {
+    /*background-color: beige;*/
+    height: 20%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 20px;
+}
+
+.slogan {
+    width: 50%;
+}
+
+/*celle de droite Numéros*/
+.navNumeros {
+    /*background-color: pink;*/
+    width: 5%;
+    height: 20%;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+    right: 20px;
+}
+
+.border {
+    border-right: solid #FFF;
+}
+
+.navNumeros a {
+    display: block;
+}
+
+/*POUR LES 3 SECTIONS aux NUMEROS*/
+.numeroRelative {
+    position: relative;
+    top: 120px;
+    font-size: 100px;
+    font-weight: 800;
+    color: rgba(248, 248, 253, 0.5);
+}
+
+.content {
+    padding-left: 10%;
+}
+
+
+/*SECTION STARTED*/
+
+.started {
+    justify-content: space-between;
+}
+.width45{width: 45%;}
+
+/*SECTION ESSENTIALS*/
+.essentials {
+    justify-content: space-between;
+}
+
+/*SECTION KEY*/
+.key {
+    justify-content: space-between;
+}
+
+/*FOOTER*/
+footer {
+    justify-content: space-between;
+    /*je lui ai retirai la classe paddings car il était le seul à avoir besoin d'un padding de partout*/
+    padding: 5% 15%;
+}
+
+/*Colonne de gauche*/
+.mntn {
+    width: 40%;
+    flex-direction: column;
+}
+
+.mntn a {
+    display: block;
+}
+
+.mntn p {
+    padding-bottom: 40px;
+}
+
+.copyright {
+    color: rgba(248, 248, 253, 0.5);
+}
+
+/*Colonne du milieu plus à droite qu'au milieu*/
+.about {
+    width: 20%;
+}
+
+.about h5 {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.about nav a {
+    display: block;
+    line-height: 1.8rem;
+}
+
+/*Colonne du droite*/
+.equipe {
+    width: 20%;
+}
+
+.equipe h5 {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.equipe nav a {
+    display: block;
+    line-height: 1.8rem;
+}
+/* MEDIA QUERY  MEDIA QUERY  MEDIA QUERY  MEDIA QUERY  MEDIA QUERY  MEDIA QUERY */
+@media all and (min-width: 501px) and (max-width: 800px){
+    .medium-6{
+        width: 48%;
+    }
+    header nav {
+        width: 45%;
+    }
+    .hero {
+        /*background-color: aqua;*/
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 20vh;
+    }
+    /* Nav de gauche du HERO - réseaux sociaux*/
+.navReseauxSociaux {
+    /*background-color: beige;*/
+    height: 15%;
+}
+    /*celle de droite Numéros*/
+.navNumeros {
+    /*background-color: pink;*/
+    width: 5%;
+    height: 15%;
+    right: 20px;
+}
+.slogan>h2{font-size: 2.1rem;}
+.essentials{
+    flex-direction: column-reverse;
+}
+.started{width: 100%;}
+.started>img, .essentials>img, .key>img{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*FOOTER*/
+footer {
+    padding: 10% 5%;
+}
+}
+
+@media all and (max-width: 500px){
+    .small-12{
+        width: 100%;
+    }
+}

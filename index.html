@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!--On prévient le navigateur comment le texte est transmis et stocké-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--C'est le nom du site qui apparaitra dans l'onglet-->
+        <title>MNTN</title>
+    
+        <!--Relie ma page html au CSS-->
+        <link rel="stylesheet" href="./style.css">
+        
+        <!--Relie à mon normalize-->
+        <link rel="stylesheet" href="./normalize.css">
+    
+        <!--Lien avec FontAwesome-->
+        <script src="https://kit.fontawesome.com/3b7ed698a0.js" crossorigin="anonymous"></script>
+    </head>
+    
+<body>
+    <!--HEADER-->
+    <header class="flex">
+        <a href=""><h1>MNTN</h1></a>
+        <nav class="flex">
+            <a href="">Equipement</a>
+            <a href="">About us</a>
+            <a href="">Blog</a>
+        </nav>
+        <a href=""><i class="fa-regular fa-circle-user"></i> Account</a>
+    </header>
+    <!--HERO-->
+    <section class="flex hero">
+        <!--NAV verticale à gauche mettre en fixed si dans HERO ou en sticky si dans body-->
+        <div class="navPosition">
+            <nav class="flex navReseauxSociaux">
+                <p>Follow us</p>
+                <a><i class="fa-brands fa-instagram"></i></a>
+                <a><i class="fa-brands fa-twitter"></i></a>
+            </nav>
+    </div>
+        <div class="slogan">
+            <p class="dore">⎯⎯⎯⎯⎯⎯  <span>A HIKING GUIDE</span></p>
+            <h2>Be prepared for The <br> Mountains And Beyond!</h2>
+            <p>scroll down  ↓</p>
+        </div>
+        <!--NAV verticale à droite mettre en fixed si dans HERO ou en sticky si dans body-->
+        <div class="navPosition">
+            <nav class="flex navNumeros border">
+                <a href="">Start</a>
+                <a href="">01</a>
+                <a href="">02</a>
+                <a href="">03</a>
+            </nav>
+        </div>
+    </section>
+    <!--MAIN-->
+    <main>
+    <!--Pour ce site on pourrait noter SECTION 01 mais comme Ludivine ne veut pas de numéro j'ajoute un titre ;-) GET STARTED-->
+        <section class="paddings flex started">
+            <div class="width45">
+                <!--01 en position relative-->
+                <p class="numeroRelative">01</p>
+                <div class="content">
+                    <p class="dore">⎯⎯⎯⎯⎯  <span>GET STARTED</span></p>
+                    <h3>What level of <br>
+                    hiker are you?</h3>
+                    <p>Determining what level of hiker you are can be an important tool when planning
+                    future hikes. This hiking level guide will help you plan hikes according to different
+                    hike ratings set by various websites like All Trails and Modern Hiker. What type of
+                    EVALUATION 1 : MNTN3hiker are you - novice, moderate, advanced moderate, expert, or expert
+                    backpacker?</p>
+                    <br>
+                    <p class="dore">read more  →</p>
+                </div>
+            </div>
+            <div class="width45">
+                <img src="./asset/image1.jpg" alt="Randonneur en montagne" title="Randonneur en montagne">
+            </div>
+        </section>
+
+        <!--SECTION 02 HIKING ESSENTIALS-->
+        <section class="paddings flex essentials">
+            <div class="width45">
+                <img src="./asset/image2.jpg" alt="Randonneur face aux montagnes" title="Randonneur face aux montagnes">
+            </div>
+            <div class="width45">
+                <!--02 en position relative-->
+                <p class="numeroRelative">02</p>
+                <div class="content">
+                    <p class="dore">⎯⎯⎯⎯⎯  <span>HIKING ESSENTIALS</span></p>
+                    <h3>Picking the right <br>
+                    Hiking Gear!</h3>
+                    <p>The nice thing about beginning hiking is that you don't really need any special gear,
+                    you can probably get away with things you already have.
+                    Let's start with clothing. A typical mistake hiking beginners make is wearing jeans
+                    and regular clothes, which will get heavy and chafe wif they get sweaty or wet.</p>
+                    <br>
+                    <p class="dore">read more  →</p>
+                </div>
+            </div>
+        </section>
+
+        <!--SECTION 03 THE KEY-->
+        <section class="paddings flex key">
+            <div class="width45">
+                <!--03 en position relative-->
+                <p class="numeroRelative">03</p>
+                <div class="content">
+                    <p class="dore">⎯⎯⎯⎯⎯  <span> WHERE YOU GO IS THE KEY</span></p>
+                    <h3>Understand Your <br>
+                    Map & Timing</h3>
+                    <p>To start, print out the hiking guide and map. If it's raining, throw them in a Zip-Lock
+                    bag. Read over the guide, study the map, and have a good idea of what to expect. I
+                    like to know what my next landmark is as I hike. For example, I'll read the guide and
+                    know that say, in a mile, I make a right turn at the junction.</p>
+                    <br>
+                    <p class="dore">read more  →</p>
+                </div>
+            </div>
+            <div class="width45">
+                <img src="./asset/image3.jpg" alt="Boussole dans une main face aux en montagne" title="Boussole dans une main">
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="flex">
+        <!--Colonne de gauche-->
+        <div class="flex mntn">
+            <!--REMPLIR HREF-->
+            <a href=""><h4>MNTN</h4></a>
+            <p>Get out there & discover your next <br> slope, mountain & destination!</p>
+            <a href="" class="copyright">Copyright 2023 MNTN, Inc. Terms & Privacy</a>
+        </div>
+
+        <!--Colonne du milieu mais plus vers la droite-->
+        <div class="about">
+            <h5>More on The Blog</h5>
+            <nav>
+                <a href="">About MNTN</a>
+                <a href="">Contributors & Writers</a>
+                <a href="">Write For Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Privacy Policy</a>
+            </nav>
+        </div>
+
+        <!--Colonne de droite-->
+        <div class="equipe">
+            <h5>More on MNTN</h5>
+            <nav>
+                <a href="">The Team</a>
+                <a href="">Jobs</a>
+                <a href="">Press</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
